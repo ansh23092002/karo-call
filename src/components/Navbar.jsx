@@ -13,7 +13,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full absolute z-20 bg-[#7b1e1e] text-white shadow-md">
+    <nav className="w-full absolute z-20 bg-[#7B2F14] text-white shadow-md">
       <div className="flex justify-between items-center px-6 md:px-12 ">
         {/* Logo */}
         <Link href="/" className="flex items-center ga justify-around p-2">
