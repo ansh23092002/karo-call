@@ -96,3 +96,49 @@ export const features = [
       link: "#",
     },
   ];
+
+  export const review =[
+    {
+      name:'Sonal',
+      des:'My washing machine and fridge were repaired perfectly on the first visit. The technicians are skilled and polite! It saved me both time and money, and I will definitely choose them for future services.',
+      img:'/image/reviews/Sonal.jpg',
+    },
+    {
+      name:'Naman',
+      des:'I used their car wash and electrical services — both were hassle-free and neatly done. Great experience! Their team is polite and pays attention to detail, making the whole process smooth and easy.',
+      img:'/image/reviews/Naman.jpg',
+    },
+    {
+      name:'Kailash',
+      des:'karo Call Services did an excellent job with my AC repair — quick, professional, and affordable! The technician arrived on time and explained everything clearly. I’m really satisfied with their service.',
+      img:'/image/reviews/Kailash.jpg',
+    },
+    {
+      name:'Priyanka',
+      des:'From plumbing to appliance repair, they offer reliable and on-time service. I’m really happy with their work! Their service quality and customer support are truly impressive and worth recommending.',
+      img:'/image/reviews/Priyanka.jpg',
+    },
+  ];
+
+  export const steps = [
+  {
+    img: "image/icons/book-service.png", // replace with your image path
+    title: "Book a Service",
+  },
+  {
+    img: "image/icons/booking-confirmed.png",
+    title: "Booking Confirmed",
+  },
+  {
+    img: "image/icons/handyman.png",
+    title: "Handyman Arrives",
+  },
+  {
+    img: "image/icons/services-done.png",
+    title: "Services Done",
+  },
+  {
+    img: "image/icons/pay-feedback.png",
+    title: "Pay & Feedback",
+  },
+];

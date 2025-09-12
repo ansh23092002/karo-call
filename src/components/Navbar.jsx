@@ -94,9 +94,9 @@ export default function Navbar() {
 
       {/* Dropdown Menu */}
       {open && (
-        <ul className="absolute left-0 mt-2 w-40 bg-white text-gray-800 rounded shadow-lg z-50">
+        <ul className="absolute left-0 mt-2 w-50 bg-white text-gray-800 rounded shadow-lg z-50">
           <li
-            className={`px-4 py-2 hover:bg-yellow-100 ${
+            className={`px-4 py-2 hover:bg-yellow-100    ${
               pathname === "/join-us/career" ? "bg-yellow-200" : ""
             }`}
           >
@@ -106,11 +106,11 @@ export default function Navbar() {
           </li>
           <li
             className={`px-4 py-2 hover:bg-yellow-100 ${
-              pathname === "/join-us/service" ? "bg-yellow-200" : ""
+              pathname === "/join-us/serviceProvider" ? "bg-yellow-200" : ""
             }`}
           >
-            <Link href="/join-us/service" onClick={() => setOpen(false)}>
-              Service
+            <Link href="/join-us/serviceProvider" onClick={() => setOpen(false)}>
+             Service Provider
             </Link>
           </li>
         </ul>
@@ -249,7 +249,7 @@ export default function Navbar() {
                           : "hover:text-yellow-200"
                       }`}
                     >
-                      Service
+                      Service Provider
                     </Link>
                   </li>
                 </ul>
