@@ -66,7 +66,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative h-screen   overflow-hidden">
+    <div className="relative h-screen max-sm:h-60   overflow-hidden">
       {/* Slides */}
       {PostersImages.map((item, index) => (
         <img

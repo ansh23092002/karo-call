@@ -19,9 +19,9 @@ export default function Home() {
           <div className="w-full px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center">
             {/* Feature 1 */}
             <div className="flex flex-col items-center justify-center p-4">
-              <Lottie loop={true}
+              <Lottie loop={true}   autoplay={true} 
                 path="/animation/services.json"
-                className="w-10 h-10"
+                className="w-10 h-10"       
               />
               <p className="font-semibold">Same Day Services</p>
             </div>
@@ -34,7 +34,7 @@ export default function Home() {
 
             {/* Feature 3 */}
             <div className="flex flex-col items-center justify-center p-4">
-              <Lottie loop={true}
+              <Lottie loop={true}   autoplay={true} 
                 path="/animation/Insured-Work.json"
                 className="w-10 h-10"
               />
@@ -52,12 +52,12 @@ export default function Home() {
         {/* WHY US */}
         <section className="py-16 px-6 md:px-16 bg-white">
           <div className="text-center mb-12">
-            <h2 className="text-xl font-bold text-[#A4451F] uppercase">
+            <h1 className="text-xl font-bold text-[#A4451F] uppercase">
               Why Us?
-            </h2>
-            <p className="text-lg md:text-xl font-semibold text-gray-800 mt-2">
+            </h1>
+            <h2 className="text-lg md:text-xl font-semibold text-gray-800 mt-2">
               Your Trusted Partner for Quality Home Services
-            </p>
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full px-6">
@@ -128,9 +128,9 @@ export default function Home() {
             className="w-screen h-screen "
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/40">
-            <h2 className="text-4xl font-bold text-white my-2">
+            <h4 className="text-4xl font-bold text-white my-2">
               CUSTOMER REVIEWS
-            </h2>
+            </h4>
             <p className="text-lg text-gray-200 mb-8">
               What our customers say...
             </p>
@@ -147,7 +147,7 @@ export default function Home() {
                       alt={data.name}
                       className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
                     />
-                    <h1 className="text-xl font-semibold">{data.name}</h1>
+                    <h4 className="text-xl font-semibold">{data.name}</h4>
                     <p className="text-gray-600 mt-2">{data.des}</p>
                   </div>
                 ))}
@@ -156,11 +156,43 @@ export default function Home() {
           </div>
         </section>
 
+         <section className="py-16 bg-white text-center">
+      {/* Heading */}
+      <h6 className="text-2xl md:text-3xl font-bold text-[#7B2F14] mb-2">
+        How does it work
+      </h6>
+      <p className="text-gray-800 font-semibold text-lg">
+        Comprehensive Home Care & Repair Services – Reliable, Fast & Affordable!
+      </p>
+
+      {/* Divider line */}
+      <div className="w-40 h-1 bg-gradient-to-r from-orange-400 to-orange-700 mx-auto my-6 rounded-full"></div>
+
+      {/* Steps */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto mt-10 px-4">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-md rounded-xl p-5 flex flex-col items-center justify-center hover:shadow-lg transition"
+          >
+            <img
+              src={step.img}
+              alt={step.title}
+              className="w-16 h-16 mb-4"
+            />
+            <p className=" px-4 py-2 rounded-md font-semibold text-sm mt-2">
+              {step.title}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+
         {/* BOOK A SERVICE */}
         <section className="w-full bg-gray-50 py-12">
           <div className="w-full px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">BOOK A SERVICE</h2>
+              <h7 className="text-2xl font-bold text-gray-900">BOOK A SERVICE</h7>
               <p className="text-gray-600 italic mt-2">
                 “Get a Free Estimate Today!”
               </p>
@@ -169,9 +201,9 @@ export default function Home() {
                 <div className="flex items-center p-6 bg-blue-50 rounded-md shadow-sm">
                   <FaPhoneAlt className="text-2xl text-brown-700 mr-4" />
                   <div>
-                    <h3 className="font-semibold text-lg text-gray-800">
+                    <h8 className="font-semibold text-lg text-gray-800">
                       Call Us Now
-                    </h3>
+                    </h8>
                     <p className="text-gray-700">18008892771</p>
                   </div>
                 </div>
@@ -179,9 +211,9 @@ export default function Home() {
                 <div className="flex items-center p-6 bg-blue-50 rounded-md shadow-sm">
                   <MdEmail className="text-3xl text-brown-700 mr-4" />
                   <div>
-                    <h3 className="font-semibold text-lg text-gray-800">
+                    <h9 className="font-semibold text-lg text-gray-800">
                       Mail Us Now
-                    </h3>
+                    </h9>
                     <p className="text-gray-700">contact@karocallservices.com</p>
                   </div>
                 </div>
@@ -242,37 +274,7 @@ export default function Home() {
           </div>
         </section>
 
-         <section className="py-16 bg-white text-center">
-      {/* Heading */}
-      <h2 className="text-2xl md:text-3xl font-bold text-[#7B2F14] mb-2">
-        How does it work
-      </h2>
-      <p className="text-gray-800 font-semibold text-lg">
-        Comprehensive Home Care & Repair Services – Reliable, Fast & Affordable!
-      </p>
-
-      {/* Divider line */}
-      <div className="w-40 h-1 bg-gradient-to-r from-orange-400 to-orange-700 mx-auto my-6 rounded-full"></div>
-
-      {/* Steps */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto mt-10 px-4">
-        {steps.map((step, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-md rounded-xl p-5 flex flex-col items-center justify-center hover:shadow-lg transition"
-          >
-            <img
-              src={step.img}
-              alt={step.title}
-              className="w-16 h-16 mb-4"
-            />
-            <p className=" px-4 py-2 rounded-md font-semibold text-sm mt-2">
-              {step.title}
-            </p>
-          </div>
-        ))}
-      </div>
-    </section>
+        
       </div>
     </section>
   );
