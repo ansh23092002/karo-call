@@ -1,16 +1,11 @@
-import Navbar from "../components/Navbar";
-import './globals.css'
-import Footer from "../components/Footer";
-import Head from "next/head";
-
 export const metadata = {
-  title: "Karo Call Services | Home Repairs & Services",
-  description: "Book trusted home repair, installation, and maintenance services with Karo Call. Fast, reliable, and verified professionals.",
-  keywords: "home repair, handyman, installation, maintenance, Karo Call, services, trusted, verified, booking",
+  title: "About Us | Karo Call Services",
+  description: "Learn more about Karo Call Services, our mission, vision, and the trusted professionals behind our home repair and installation services.",
+  keywords: "about, Karo Call, home repair, services, mission, vision, team, professionals",
   openGraph: {
-    title: "Karo Call Services",
-    description: "Book trusted home repair, installation, and maintenance services with Karo Call.",
-    url: "https://karocall.com",
+    title: "About Us | Karo Call Services",
+    description: "Learn more about Karo Call Services, our mission, vision, and the trusted professionals behind our home repair and installation services.",
+    url: "https://karocall.com/about",
     siteName: "Karo Call Services",
     images: [
       {
@@ -25,17 +20,14 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function AboutLayout({ children }) {
   return (
     <html lang="en">
-   <Head>
-    <link ref="preload" href="/styles/globals.css"  as="style"/>
-      <link rel="preload" href="../image/Banner/ACRepair.webp" as="image" />
-   </Head>
-      <body className="bg-gray-50">
-        <Navbar />
-        <main className="pt-20 min-h-screen">{children}</main>
-        <Footer />
+      <body>
+        <main >
+          {children}
+        </main>
+
       </body>
     </html>
   );

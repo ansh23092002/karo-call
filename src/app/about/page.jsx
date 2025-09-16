@@ -1,26 +1,6 @@
 "use client";
 
-export const metadata = {
-  title: "About Us | Karo Call Services",
-  description: "Learn more about Karo Call Services, our mission, vision, and the trusted professionals behind our home repair and installation services.",
-  keywords: "about, Karo Call, home repair, services, mission, vision, team, professionals",
-  openGraph: {
-    title: "About Us | Karo Call Services",
-    description: "Learn more about Karo Call Services, our mission, vision, and the trusted professionals behind our home repair and installation services.",
-    url: "https://karocall.com/about",
-    siteName: "Karo Call Services",
-    images: [
-      {
-        url: "/image/Banner_about.jpg",
-        width: 1200,
-        height: 630,
-        alt: "About Karo Call Services Banner",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-};
+
 import { about, aboutWhatdeliver } from "@/Data";
 import React from "react";
 import Image from "next/image";
@@ -61,6 +41,8 @@ const Page = () => {
       alt="about karo call"
       width={500}
       height={350}
+      sizes="(max-width: 768px) 100vw, 500px"
+      priority={true}
       className="rounded-2xl transform hover:scale-105 transition duration-500 ease-in-out"
     />
   </div>
@@ -89,7 +71,7 @@ const Page = () => {
               className="h-full p-2 w-full object-contain"
               width={64}
               height={64}
-              priority={false}
+              loading="lazy"
             />
           </div>
 
@@ -148,6 +130,7 @@ const Page = () => {
           width={500}
           height={350}
           className=""
+           loading="lazy"
         />
       </div>
       {/* Text */}

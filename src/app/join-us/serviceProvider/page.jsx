@@ -54,7 +54,7 @@ const PartnerPage = () => {
         </div>
         <div className="flex justify-center">
           <img
-            src="/image/bg-joiunus2.jpeg"
+            src="/image/bg-joiunus2.webp"
             alt="Join Us"
             className="rounded-3xl shadow-lg object-cover w-full max-w-lg hover:scale-105 transition-transform duration-500"
           />
