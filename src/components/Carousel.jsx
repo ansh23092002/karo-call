@@ -1,38 +1,36 @@
-"use client";
 import React, { useEffect, useState } from "react";
-import { FaLessThan, FaGreaterThan } from "react-icons/fa";
+import Imgae from "next/image";
 
 const Carousel = () => {
   const PostersImages = [
     {
       id: 1,
-      Dtsrc: "/image/Banner/AcRepair.png",
-      mbsrc: "/image/Banner/AcRepair.png",
+      Dtsrc: "/image/Banner/AcRepair.webp",
+      mbsrc: "/image/Banner/AcRepair.webp",
     },
     {
       id: 2,
-      Dtsrc: "/image/Banner/CARservices.png",
-      mbsrc: "/image/Banner/CARservices.png",
+      Dtsrc: "/image/Banner/CARservices.webp",
+      mbsrc: "/image/Banner/CARservices.webp",
     },
     {
       id: 3,
-      Dtsrc: "/image/Banner/ElectricServices.png",
-      mbsrc: "/image/Banner/ElectricServices.png",
+      Dtsrc: "/image/Banner/ElectricServices.webp",
+      mbsrc: "/image/Banner/ElectricServices.webp",
     },
     {
       id: 4,
-      Dtsrc: "/image/Banner/HomeAppliances.png",
-      mbsrc: "/image/Banner/HomeAppliances.png",
+      Dtsrc: "/image/Banner/HomeAppliances.webp",
+      mbsrc: "/image/Banner/HomeAppliances.webp",
     },
     {
       id: 5,
-      Dtsrc: "/image/Banner/smartSecurity.png",
-      mbsrc: "/image/Banner/smartSecurity.png",
+      Dtsrc: "/image/Banner/smartSecurity.webp",
+      mbsrc: "/image/Banner/smartSecurity.webp",
     },
   ];
 
   const [current, setCurrent] = useState(0);
-  const autoplay = true;
   const autoSlideInterval = 4000; // 4s
   const [isMobile, setIsMobile] = useState(false);
 
@@ -46,31 +44,29 @@ const Carousel = () => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  // ✅ autoplay
+  // Autoplay
   useEffect(() => {
-    if (!autoplay) return;
     const slideInterval = setInterval(nextSlide, autoSlideInterval);
     return () => clearInterval(slideInterval);
   }, [current]);
 
   const nextSlide = () => {
-    setCurrent((prev) =>
-      prev === PostersImages.length - 1 ? 0 : prev + 1
-    );
+    setCurrent((prev) => (prev === PostersImages.length - 1 ? 0 : prev + 1));
   };
 
   const prevSlide = () => {
-    setCurrent((prev) =>
-      prev === 0 ? PostersImages.length - 1 : prev - 1
-    );
+    setCurrent((prev) => (prev === 0 ? PostersImages.length - 1 : prev - 1));
   };
 
   return (
     <div className="relative h-screen max-sm:h-60   overflow-hidden">
       {/* Slides */}
       {PostersImages.map((item, index) => (
-        <img
+        <Imgae
           key={index}
+          width={1920}
+          height={600}
+          priority={true}
           src={isMobile ? item.mbsrc : item.Dtsrc}
           className={`absolute top-0 left-0 h-full object-fill transition-opacity duration-700 ${
             current === index ? "opacity-100" : "opacity-0"
@@ -78,22 +74,6 @@ const Carousel = () => {
           alt={`Slide ${index + 1}`}
         />
       ))}
-
-      {/* Navigation Arrows */}
-      <div className="absolute inset-0 flex justify-between items-center px-4">
-        <button
-          className="bg-black/50 text-white p-3 rounded-full hover:bg-black/70"
-          onClick={prevSlide}
-        >
-          <FaLessThan size={18} />
-        </button>
-        <button
-          className="bg-black/50 text-white p-3 rounded-full hover:bg-black/70"
-          onClick={nextSlide}
-        >
-          <FaGreaterThan size={18} />
-        </button>
-      </div>
 
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3">

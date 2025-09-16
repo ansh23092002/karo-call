@@ -10,7 +10,7 @@ import Lottie from "lottie-react";
 
 export default function Home() {
   return (
-    <section className="">
+    <section className="bg-red-700">
       <Carousel />
 
       <div>
@@ -123,7 +123,7 @@ export default function Home() {
         {/* CUSTOMER REVIEWS */}
         <section className="relative h-screen w-screen flex justify-center items-center"> 
           <img
-            src="/image/bg-review.jpg"
+            src="/image/bg-review.webp"
             alt="bg"
             className="w-screen h-screen "
           />
@@ -192,7 +192,7 @@ export default function Home() {
         <section className="w-full bg-gray-50 py-12">
           <div className="w-full px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
-              <h7 className="text-2xl font-bold text-gray-900">BOOK A SERVICE</h7>
+              <h4 className="text-2xl font-bold text-gray-900">BOOK A SERVICE</h4>
               <p className="text-gray-600 italic mt-2">
                 “Get a Free Estimate Today!”
               </p>
@@ -201,9 +201,9 @@ export default function Home() {
                 <div className="flex items-center p-6 bg-blue-50 rounded-md shadow-sm">
                   <FaPhoneAlt className="text-2xl text-brown-700 mr-4" />
                   <div>
-                    <h8 className="font-semibold text-lg text-gray-800">
+                    <h5 className="font-semibold text-lg text-gray-800">
                       Call Us Now
-                    </h8>
+                    </h5>
                     <p className="text-gray-700">18008892771</p>
                   </div>
                 </div>
@@ -211,9 +211,9 @@ export default function Home() {
                 <div className="flex items-center p-6 bg-blue-50 rounded-md shadow-sm">
                   <MdEmail className="text-3xl text-brown-700 mr-4" />
                   <div>
-                    <h9 className="font-semibold text-lg text-gray-800">
+                    <h6 className="font-semibold text-lg text-gray-800">
                       Mail Us Now
-                    </h9>
+                    </h6>
                     <p className="text-gray-700">contact@karocallservices.com</p>
                   </div>
                 </div>

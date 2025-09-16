@@ -1,4 +1,26 @@
-'use client'
+"use client";
+
+export const metadata = {
+  title: "About Us | Karo Call Services",
+  description: "Learn more about Karo Call Services, our mission, vision, and the trusted professionals behind our home repair and installation services.",
+  keywords: "about, Karo Call, home repair, services, mission, vision, team, professionals",
+  openGraph: {
+    title: "About Us | Karo Call Services",
+    description: "Learn more about Karo Call Services, our mission, vision, and the trusted professionals behind our home repair and installation services.",
+    url: "https://karocall.com/about",
+    siteName: "Karo Call Services",
+    images: [
+      {
+        url: "/image/Banner_about.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Karo Call Services Banner",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 import { about, aboutWhatdeliver } from "@/Data";
 import React from "react";
 import Image from "next/image";
@@ -35,7 +57,7 @@ const Page = () => {
   {/* Image Section */}
   <div className="flex-1 flex justify-center">
     <Image
-      src="/image/Banner_about.jpg"
+      src="/image/Banner_about.webp"
       alt="about karo call"
       width={500}
       height={350}
@@ -61,10 +83,13 @@ const Page = () => {
         >
           {/* Icon */}
           <div className="h-20 w-20  overflow-hidden flex items-center justify-center rounded-full bg-white mb-6 shadow-lg">
-            <img
+            <Image
               src={data.icon}
               alt={data.text}
               className="h-full p-2 w-full object-contain"
+              width={64}
+              height={64}
+              priority={false}
             />
           </div>
 

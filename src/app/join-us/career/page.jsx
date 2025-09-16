@@ -13,7 +13,7 @@ const CareerPage = () => {
         </h2>
         <div className="flex flex-col md:flex-row items-center gap-12">
           <img
-            src="/image/Joinus.jpg"
+            src="/image/Joinus.webp"
             alt="Join Us"
             className="w-full md:w-1/2 h-[350px] object-cover rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
           />

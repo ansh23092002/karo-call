@@ -10,16 +10,16 @@ const page = () => {
   return (
     <div>
       <section className='h-screen w-full relative'>
-        <img src="/image/Banner_blog.jpg" alt="blog banner" className='w-full h-full object-cover' />
+        <img src="/image/Banner_blog.webp" alt="blog banner" className='w-full h-full object-cover' />
       </section>
 
-      <section className="min-h-screen flex justify-center items-center p-6 px-15 bg-gray-50">
+      <section className="min-h-screen flex justify-center items-center p-6 px-15ṇ bg-gray-50">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
 
         {/* Card 1 */}
         <div className="rounded-xl overflow-hidden shadow-md bg-white lg:w-full  md:w-70  sm:w-[400px]">
           <Image
-            src="/image/blog/KCS_blog.jpg"
+            src="/image/blog/KCS_blog.webp"
             alt="Tools"
             width={400}
             height={250}
@@ -52,7 +52,7 @@ const page = () => {
         {/* Card 2 */}
         <div className="rounded-xl overflow-hidden shadow-md bg-white lg:w-full  md:w-70 sm:w-[400px]">
           <Image
-            src="/image/blog/KCS_blog2.jpg"
+            src="/image/blog/KCS_blog2.webp"
             alt="Electrician"
             width={400}
             height={250}

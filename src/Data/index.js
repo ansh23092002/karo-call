@@ -13,25 +13,25 @@ export const features = [
     title: "Experienced Technicians",
     description:
       "Fully trained and certified professionals. We bring years of hands-on experience to every job.",
-    img: "/image/experienced.jpg",
+    img: "/image/experienced.webp",
   },
   {
     title: "Affordable Pricing",
     description:
       "We offer competitive rates with no hidden fees. Quality service doesn’t have to break the bank.",
-    img: "/image/pricing.jpg",
+    img: "/image/pricing.webp",
   },
   {
     title: "Customer Satisfaction",
     description:
       "Your satisfaction is our top priority—guaranteed. We’re not happy until you are.",
-    img: "/image/satisfaction.jpg",
+    img: "/image/satisfaction.webp",
   },
   {
     title: "24/7 Availability",
     description:
       "We’re here whenever you need us, day or night. Help is just a call away—anytime.",
-    img: "/image/availability.jpg",
+    img: "/image/availability.webp",
   },
 ];
 
@@ -104,44 +104,44 @@ export const review = [
   {
     name: "Sonal",
     des: "My washing machine and fridge were repaired perfectly on the first visit. The technicians are skilled and polite! It saved me both time and money, and I will definitely choose them for future services.",
-    img: "/image/reviews/Sonal.jpg",
+    img: "/image/reviews/Sonal.webp",
   },
   {
     name: "Naman",
     des: "I used their car wash and electrical services — both were hassle-free and neatly done. Great experience! Their team is polite and pays attention to detail, making the whole process smooth and easy.",
-    img: "/image/reviews/Naman.jpg",
+    img: "/image/reviews/Naman.webp",
   },
   {
     name: "Kailash",
     des: "karo Call Services did an excellent job with my AC repair — quick, professional, and affordable! The technician arrived on time and explained everything clearly. I’m really satisfied with their service.",
-    img: "/image/reviews/Kailash.jpg",
+    img: "/image/reviews/Kailash.webp",
   },
   {
     name: "Priyanka",
     des: "From plumbing to appliance repair, they offer reliable and on-time service. I’m really happy with their work! Their service quality and customer support are truly impressive and worth recommending.",
-    img: "/image/reviews/Priyanka.jpg",
+    img: "/image/reviews/Priyanka.webp",
   },
 ];
 
 export const steps = [
   {
-    img: "/image/icons/book-service.png", // replace with your /image path
+    img: "/image/icons/book-service.webp", // replace with your /image path
     title: "Book a Service",
   },
   {
-    img: "/image/icons/booking-confirmed.png",
+    img: "/image/icons/booking-confirmed.webp",
     title: "Booking Confirmed",
   },
   {
-    img: "/image/icons/handyman.png",
+    img: "/image/icons/handyman.webp",
     title: "Handyman Arrives",
   },
   {
-    img: "/image/icons/services-done.png",
+    img: "/image/icons/services-done.webp",
     title: "Services Done",
   },
   {
-    img: "/image/icons/pay-feedback.png",
+    img: "/image/icons/pay-feedback.webp",
     title: "Pay & Feedback",
   },
 ];
@@ -168,7 +168,7 @@ export const services_data = [
         },
       ],
     },
-    img: "/image/services/Fridge.jpg",
+    img: "/image/services/Fridge.webp",
   },
   {
     top: "AC Repair Services",
@@ -191,7 +191,7 @@ export const services_data = [
         },
       ],
     },
-    img: "/image/services/AC.jpg",
+    img: "/image/services/AC.webp",
   },
   {
     top: "Electrical Services",
@@ -207,7 +207,7 @@ export const services_data = [
         { point: "Comprehensive safety inspections." },
       ],
     },
-    img: "/image/services/electrician.jpg",
+    img: "/image/services/electrician.webp",
   },
   {
     top: "Car Wash Services",
@@ -226,7 +226,7 @@ export const services_data = [
         },
       ],
     },
-    img: "/image/services/Car.jpg",
+    img: "/image/services/Car.webp",
   },
   {
     top: "Washing Machine Repair Services",
@@ -249,7 +249,7 @@ export const services_data = [
         },
       ],
     },
-    img: "/image/services/washing.jpg",
+    img: "/image/services/washing.webp",
   },
   {
     top: "Plumbing Services",
@@ -268,7 +268,7 @@ export const services_data = [
         },
       ],
     },
-    img: "/image/services/plumbing.jpg",
+    img: "/image/services/plumbing.webp",
   },
   {
     top: "CCTV Camera Installation & Repair Services",
@@ -290,7 +290,7 @@ export const services_data = [
         },
       ],
     },
-    img: "/image/services/CCTV.jpg",
+    img: "/image/services/CCTV.webp",
   },
   {
     top: "Laptop Services",
@@ -318,40 +318,40 @@ export const services_data = [
         { point: "Operating system installation, updates, and optimization." },
       ],
     },
-    img: "/image/services/laptop.jpg",
+    img: "/image/services/laptop.webp",
   },
 ];
 
 export const KCS_Promises = [
   {
     title: "Our Offerings",
-    img: "/image/promises/v1.png",
+    img: "/image/promises/v1.webp",
   },
   {
     title: "Free Reschedule",
-    img: "/image/promises/v2.png",
+    img: "/image/promises/v2.webp",
   },
   {
     title: "Guaranteed Solution",
-    img: "/image/promises/v3.png",
+    img: "/image/promises/v3.webp",
   },
   {
     title: "Kcs Partners",
-    img: "/image/promises/v4.png",
+    img: "/image/promises/v4.webp",
   },
 ];
 
 export const Popular_Services = [
   {
-    img: "/image/services/AC.jpg", // replace with your /image path
+    img: "/image/services/AC.webp", // replace with your /image path
     title: "AC Repair Services",
   },
   {
-    img: "/image/services/plumbing.jpg",
+    img: "/image/services/plumbing.webp",
     title: "Plumbing Services",
   },
   {
-    img: "image/services/electrician.jpg",
+    img: "/image/services/electrician.webp",
     title: "Electrician Services",
   },
 ];
@@ -361,40 +361,40 @@ export const about = [
     top: "Vision",
     description:
       "To be the best service provider company across Chhattisgarh and expand to a Pan-India level. We aim to set new standards for service excellence by offering reliable, innovative installation, repair, and automation solutions while building long-term relationships with our clients.",
-    img: "/image/idea.png",
+    img: "/image/idea.webp",
   },
   {
     top: "Mission",
     description:
       "To provide exceptional automation services that exceed customer expectations, while fostering a culture of innovation, reliability, and trust. Our mission is to simplify service experiences, deliver consistent quality, and become a name customers can confidently rely on.",
-    img: "/image/rocket.png",
+    img: "/image/rocket.webp",
   },
   {
     top: "Goals",
     description:
       "To enhance the quality of repair and installation services and extend our offerings into complete home service solutions. Our goal is to grow as a trusted partner for individuals and businesses, expanding from Chhattisgarh to a recognized brand at the Pan-India level",
-    img: "/image/goal-icon.png",
+    img: "/image/goal-icon.webp",
   },
 ];
 
 export const aboutWhatdeliver = [
   {
-    icon: "/image/icons/icon1.png",
+    icon: "/image/icons/icon1.webp",
     text: "100% Satisfaction & Best Price Guaranteed",
     dec: "We promise complete satisfaction or offer free rework for your peace of mind. Our pricing is transparent and competitive, with no hidden costs. You always get the best value for your money with guaranteed quality.",
   },
   {
-    icon: "/image/icons/icon2.png",
+    icon: "/image/icons/icon2.webp",
     text: "Highly Trained & Skilled Handymen",
     dec: "Our technicians are professionally trained and experienced in their craft. They ensure every job is completed with precision and safety. We prioritize quality workmanship and customer satisfaction in every service.",
   },
   {
-    icon: "/image/icons/icon3.png",
+    icon: "/image/icons/icon3.webp",
     text: "On-Time Service & Quality Assurance",
     dec: "We are committed to delivering services on time, every time. Our team follows strict quality checks to maintain high standards. You can count on us for reliable and efficient service, always.",
   },
   {
-    icon: "/image/icons/icon4.png",
+    icon: "/image/icons/icon4.webp",
     text: "Hassle-Free Work Process",
     dec: "From booking to completion, we handle everything smoothly for you. No more stress, delays, or follow-ups — we ensure a seamless experience. Your convenience and comfort are our top priorities",
   },

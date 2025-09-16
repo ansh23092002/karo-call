@@ -7,7 +7,7 @@ const page = () => {
       {/* Banner */}
       <section className="relative h-[50vh] md:h-[60vh] w-full">
         <img
-          src="/image/Banner_contactUs.jpg"
+          src="/image/Banner_contactUs.webp"
           alt="Contact Banner"
           className="w-full h-full object-cover"
         />
