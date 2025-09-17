@@ -5,8 +5,8 @@ const Carousel = () => {
   const PostersImages = [
     {
       id: 1,
-      Dtsrc: "/image/Banner/AcRepair.webp",
-      mbsrc: "/image/Banner/AcRepair.webp",
+      Dtsrc: "/image/Banner/ACRepair.webp",
+      mbsrc: "/image/Banner/ACRepair.webp",
     },
     {
       id: 2,
@@ -66,7 +66,7 @@ const Carousel = () => {
           key={index}
           width={1920}
           height={600}
-            
+            priority={true}
           src={isMobile ? item.mbsrc : item.Dtsrc}
           className={`absolute top-0 left-0 h-full object-fill transition-opacity duration-700 ${
             current === index ? "opacity-100" : "opacity-0"

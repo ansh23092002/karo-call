@@ -1,11 +1,11 @@
 "use client";
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import {  FaYoutube } from "react-icons/fa";
 import { MdPhone, MdEmail } from "react-icons/md";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
-import { features, review, services, steps } from "@/Data";
+import { review, services} from "@/Data";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -88,20 +88,20 @@ export default function Home() {
         </section>
 
         {/* Customer Reviews */}
-        <section aria-label="Customer Reviews" className="relative h-screen w-screen flex justify-center items-center">
+        <section aria-label="Customer Reviews" className="relative h-screen  flex justify-center items-center">
           <Image
             src="/image/bg-review.webp"
             alt="Customer Reviews Background"
-            width={1920}
+            width={1200}
             height={1080}
-            className="w-screen h-screen"
+            className=" h-full w-full object-cover"
             loading="lazy"
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/40">
             <h2 className="text-4xl font-bold text-white my-2">CUSTOMER REVIEWS</h2>
             <p className="text-lg text-gray-200 mb-8">What our customers say...</p>
 
-            <div className="relative w-screen overflow-hidden">
+            <div className="relative w-full overflow-hidden">
               <div className="flex animate-marquee space-x-8">
                 {[...review, ...review].map((data, index) => (
                   <article
