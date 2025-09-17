@@ -66,7 +66,7 @@ const Carousel = () => {
           key={index}
           width={1920}
           height={600}
-          priority={true}
+            
           src={isMobile ? item.mbsrc : item.Dtsrc}
           className={`absolute top-0 left-0 h-full object-fill transition-opacity duration-700 ${
             current === index ? "opacity-100" : "opacity-0"
@@ -81,6 +81,7 @@ const Carousel = () => {
           <button
             key={i}
             onClick={() => setCurrent(i)}
+              aria-label={`Go to slide ${i + 1}`}
             className={`h-3 w-3 rounded-full transition-all ${
               current === i ? "bg-white scale-125" : "bg-white/50"
             }`}

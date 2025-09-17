@@ -1,91 +1,34 @@
- 'use client'
-import React from 'react';
+import BLog from "./blog";
 
-import Image from "next/image";
-import { FaUser, FaRegCommentDots, FaCalendarAlt } from "react-icons/fa";
 
+export const metadata = {
+  title: "Blog | Karo Call Services",
+  description: "Read the latest articles, tips, and success stories from Karo Call Services. Stay updated with our blog.",
+  keywords: "blog, articles, tips, stories, Karo Call, home repair, services",
+  openGraph: {
+    title: "Blog | Karo Call Services",
+    description: "Read the latest articles, tips, and success stories from Karo Call Services. Stay updated with our blog.",
+    url: "https://karocall.com/blog",
+    siteName: "Karo Call Services",
+    images: [
+      {
+        url: "/image/BANNER.png",
+        width: 1200,
+        height: 630,
+        alt: "Karo Call Services Banner",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 const page = () => {
- 
   return (
     <div>
-      <section className='h-screen w-full relative'>
-        <img src="/image/Banner_blog.webp" alt="blog banner" className='w-full h-full object-cover' />
-      </section>
-
-      <section className="min-h-screen flex justify-center items-center p-6 px-15ṇ bg-gray-50">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
-
-        {/* Card 1 */}
-        <div className="rounded-xl overflow-hidden shadow-md bg-white lg:w-full  md:w-70  sm:w-[400px]">
-          <Image
-            src="/image/blog/KCS_blog.webp"
-            alt="Tools"
-            width={400}
-            height={250}
-            className="object-cover w-full h-70"
-          />
-          <div className="p-4">
-            <div className="flex items-center gap-4 text-gray-500 text-sm mb-3">
-              <span className="flex items-center gap-1">
-                <FaUser /> Admin
-              </span>
-              <span className="flex items-center gap-1">
-                <FaRegCommentDots /> 0
-              </span>
-              <span className="flex items-center gap-1">
-                <FaCalendarAlt /> 13/05/2025
-              </span>
-            </div>
-            <h3 className="font-semibold text-lg text-gray-800 mb-2">
-              Top 5 Home Repair Signs You Shouldn’t Ignore — And Why a Pro is the Answer
-            </h3>
-            <a
-              href="#"
-              className="text-orange-600 font-medium hover:underline flex items-center gap-1"
-            >
-              Read more →
-            </a>
-          </div>
-        </div>
-
-        {/* Card 2 */}
-        <div className="rounded-xl overflow-hidden shadow-md bg-white lg:w-full  md:w-70 sm:w-[400px]">
-          <Image
-            src="/image/blog/KCS_blog2.webp"
-            alt="Electrician"
-            width={400}
-            height={250}
-            className="object-cover w-full h-70"
-          />
-          <div className="p-4">
-            <div className="flex items-center gap-4 text-gray-500 text-sm mb-3">
-              <span className="flex items-center gap-1">
-                <FaUser /> Admin
-              </span>
-              <span className="flex items-center gap-1">
-                <FaRegCommentDots /> 0
-              </span>
-              <span className="flex items-center gap-1">
-                <FaCalendarAlt /> 13/05/2025
-              </span>
-            </div>
-            <h3 className="font-semibold text-lg text-gray-800 mb-2">
-              Why Every Home Needs a Trusted Home Care Service Provider
-            </h3>
-            <a
-              href="#"
-              className="text-orange-600 font-medium hover:underline flex items-center gap-1"
-            >
-              Read more →
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
+      <BLog/>
     </div>
-  );
+  )
 }
 
 export default page

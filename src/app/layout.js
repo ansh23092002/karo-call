@@ -28,13 +28,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-   <Head>
-    <link ref="preload" href="/styles/globals.css"  as="style"/>
-      <link rel="preload" href="../image/Banner/ACRepair.webp" as="image" />
-   </Head>
+      <Head>
+        <link rel="preload" href="/styles/globals.css" as="style" />
+        <link rel="preload" href="../image/Banner/ACRepair.webp" as="image" />
+      </Head>
       <body className="bg-gray-50">
         <Navbar />
-        <main className="pt-20 min-h-screen">{children}</main>
+        <main>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
