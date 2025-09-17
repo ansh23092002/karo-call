@@ -70,7 +70,7 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li role="none">
-                  <Link href="/join-us/serviceProvider" role="menuitem" className={`block px-4 py-2 hover:bg-yellow-100 ${pathname === "/join-us/serviceProvider" ? "bg-yellow-200" : ""}`} onClick={() => setJoinOpen(false)}>
+                  <Link href="/join-us/ServiceProvider" role="menuitem" className={`block px-4 py-2 hover:bg-yellow-100 ${pathname === "/join-us/serviceProvider" ? "bg-yellow-200" : ""}`} onClick={() => setJoinOpen(false)}>
                     Service Provider
                   </Link>
                 </li>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const ServicesProvider = () => {
   const [formData, setFormData] = useState({
@@ -26,9 +27,9 @@ const ServicesProvider = () => {
   };
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gradient-to-r from-orange-50 to-orange-100 ">
       {/* Hero Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-16 py-16 items-center">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-16 py-16 items-center" aria-label="Hero Section">
         <div className="space-y-6">
           <h1 className="text-3xl md:text-5xl font-bold text-amber-800">
             Become Our Partner
@@ -44,25 +45,29 @@ const ServicesProvider = () => {
             while delivering outstanding services to our customers.
           </p>
           <div className="flex gap-4">
-            <button className="px-6 py-3 rounded-lg bg-amber-800 text-white font-semibold shadow-md hover:bg-amber-900 transition duration-300">
+              <button className="px-6 py-3 rounded-lg bg-amber-800 text-white font-semibold shadow-md hover:bg-amber-900 transition duration-300" aria-label="Book a Service">
               Book a Service
             </button>
-            <button className="px-6 py-3 rounded-lg border border-amber-800 text-amber-800 font-semibold hover:bg-amber-50 transition duration-300">
+              <button className="px-6 py-3 rounded-lg border border-amber-800 text-amber-800 font-semibold hover:bg-amber-50 transition duration-300" aria-label="Join Us">
               Join Us
             </button>
           </div>
         </div>
         <div className="flex justify-center">
-          <img
-            src="/image/bg-joiunus2.webp"
-            alt="Join Us"
-            className="rounded-3xl shadow-lg object-cover w-full max-w-lg hover:scale-105 transition-transform duration-500"
-          />
+            <Image
+              src="/image/bg-joiunus2.webp"
+              alt="Join Us"
+              width={800}
+              height={600}
+              className="bg-blend-multiply rounded-3xl shadow-lg object-cover w-full max-w-lg hover:scale-105 transition-transform duration-500"
+              priority={true}
+              aria-label="Join Us Hero Image"
+            />
         </div>
       </section>
 
       {/* Form Section */}
-      <section className="min-h-screen flex items-center justify-center px-4 py-12">
+        <section className="min-h-screen flex items-center justify-center px-4 py-12" aria-label="Form Section">
         <div className="w-full max-w-3xl bg-white rounded-2xl shadow-2xl p-10">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-amber-800 mb-8">
             Join Our Network
@@ -193,6 +198,7 @@ const ServicesProvider = () => {
               <button
                 type="submit"
                 className="px-10 py-3 bg-amber-800 text-white rounded-lg text-lg font-semibold shadow-md hover:bg-amber-900 hover:scale-105 transition-all duration-300"
+                  aria-label="Submit Join Us Form"
               >
                 Join Us
               </button>

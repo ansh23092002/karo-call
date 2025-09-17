@@ -1,15 +1,20 @@
 'use client'
 import React from 'react'
+import Image from "next/image";
 
-const page = () => {
+const Contact = () => {
   return (
-    <div>
+    <div className='bg-gradient-to-r from-orange-50 to-orange-100'>
       {/* Banner */}
-      <section className="relative h-[50vh] md:h-[60vh] w-full">
-        <img
+      <section className="relative h-[50vh] md:h-[60vh] w-full" aria-label="Contact Banner Section">
+        <Image
           src="/image/Banner_contactUs.webp"
           alt="Contact Banner"
+          width={1920}
+          height={600}
           className="w-full h-full object-cover"
+          priority={true}
+          aria-label="Contact Banner Image"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 flex items-center justify-center">
           <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg">
@@ -19,7 +24,7 @@ const page = () => {
       </section>
 
       {/* Contact Form */}
-      <div className="flex flex-col items-center justify-center py-16 px-4">
+  <div className="flex flex-col items-center justify-center py-16 px-4" aria-label="Contact Form Section">
         <h2 className="font-bold text-3xl mb-3 text-[#7B2F14] text-center">
           Have a Query? Get in Touch!
         </h2>
@@ -93,6 +98,7 @@ const page = () => {
             <button
               type="submit"
               className="bg-[#7B2F14] hover:bg-[#A4451F] text-white font-semibold px-10 py-3 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+              aria-label="Submit Contact Form"
             >
               Submit Application
             </button>
@@ -103,4 +109,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Contact
