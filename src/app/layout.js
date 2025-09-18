@@ -9,6 +9,10 @@ export const metadata = {
   title: "Karo Call Services | Home Repairs & Services",
   description: "Book trusted home repair, installation, and maintenance services with Karo Call. Fast, reliable, and verified professionals.",
   keywords: "home repair, handyman, installation, maintenance, Karo Call, services, trusted, verified, booking",
+    icons: {
+    icon: '/favicon.ico', // Browser tab favicon
+    apple: '/favicon-apple.png', // Optional for Apple devices
+  },
   openGraph: {
     title: "Karo Call Services",
     description: "Book trusted home repair, installation, and maintenance services with Karo Call.",
@@ -32,6 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        
         <link rel="preload" href="/styles/globals.css" as="style" />
         <link rel="preload" href="../image/Banner/ACRepair.webp" as="image" />
              
