@@ -15,6 +15,76 @@ export default function Home() {
   
       <div>
         {/* Hero / Carousel */}
+          {/* SEO: JSON-LD structured data for Organization and Website */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Karo Call Services",
+                "url": "https://karocall.com",
+                "logo": "https://karocall.com/image/BANNER.png",
+                "contactPoint": [{
+                  "@type": "ContactPoint",
+                  "telephone": "+91-18008892771",
+                  "contactType": "customer service",
+                  "areaServed": "IN",
+                  "availableLanguage": ["English", "Hindi"]
+                }],
+                "sameAs": [
+                  "https://www.facebook.com/karocallservices",
+                  "https://www.instagram.com/karocallservices"
+                ]
+              })
+            }}
+            aria-label="Karo Call Services Structured Data"
+          />
+          {/* SEO: JSON-LD for Services */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "serviceType": "Home Repair & Maintenance",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Karo Call Services",
+                  "url": "https://karocall.com"
+                },
+                "areaServed": "India",
+                "availableChannel": {
+                  "@type": "ServiceChannel",
+                  "serviceLocation": {
+                    "@type": "Place",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressCountry": "IN"
+                    }
+                  }
+                }
+              })
+            }}
+            aria-label="Karo Call Services Service Structured Data"
+          />
+          {/* SEO: JSON-LD for Customer Reviews */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "AggregateRating",
+                "itemReviewed": {
+                  "@type": "Organization",
+                  "name": "Karo Call Services"
+                },
+                "ratingValue": "4.8",
+                "reviewCount": "120"
+              })
+            }}
+            aria-label="Karo Call Services Reviews Structured Data"
+          />
         <section aria-label="Hero Section">
           <Carousel />
         </section>

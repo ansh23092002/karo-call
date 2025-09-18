@@ -1,9 +1,11 @@
-import Navbar from "../components/Navbar";
 import './globals.css'
-import Footer from "../components/Footer";
 import Head from "next/head";
+import { SessionProvider } from "next-auth/react"
+import LayoutWrapper from '../components/LayoutWrapper'
+
 
 export const metadata = {
+    metadataBase: new URL( process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"), // 👈 apna domain daalna
   title: "Karo Call Services | Home Repairs & Services",
   description: "Book trusted home repair, installation, and maintenance services with Karo Call. Fast, reliable, and verified professionals.",
   keywords: "home repair, handyman, installation, maintenance, Karo Call, services, trusted, verified, booking",
@@ -26,18 +28,70 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <Head>
         <link rel="preload" href="/styles/globals.css" as="style" />
         <link rel="preload" href="../image/Banner/ACRepair.webp" as="image" />
+             
+                {/* SEO: JSON-LD structured data for Organization and Website */}
+        
+              {/* SEO: JSON-LD for Services */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "",
+                "@type": "Service",
+                "serviceType": "Home Repair & Maintenance",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Karo Call Services",
+                  "url": "https://karocall.com"
+                },
+                "areaServed": "India",
+                "availableChannel": {
+                  "@type": "ServiceChannel",
+                  "serviceLocation": {
+                    "@type": "Place",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressCountry": "IN"
+                    }
+                  }
+                }
+              })
+            }}
+            aria-label="Karo Call Services Service Structured Data"
+          />
+          {/* SEO: JSON-LD for Customer Reviews */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "AggregateRating",
+                "itemReviewed": {
+                  "@type": "Organization",
+                  "name": "Karo Call Services"
+                },
+                "ratingValue": "4.8",
+                "reviewCount": "120"
+              })
+            }}
+            aria-label="Karo Call Services Reviews Structured Data"
+          />
       </Head>
       <body className="bg-gray-50">
-        <Navbar />
+
         <main>
-          {children}
+          <LayoutWrapper>   
+
+          <SessionProvider>{children}</SessionProvider>
+          </LayoutWrapper>
         </main>
-        <Footer />
+     
       </body>
     </html>
   );
