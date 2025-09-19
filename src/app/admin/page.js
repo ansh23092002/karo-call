@@ -3,14 +3,22 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
+    
+  const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
   const [form, setForm] = useState({
     email: "",
     password: "",
   });
 
-  const [showPassword, setShowPassword] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", form);
+    router.push("/admin/dashbord");
+  };
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
@@ -43,7 +51,8 @@ export default function LoginPage() {
           className="space-y-6"
           onSubmit={(e) => {
             e.preventDefault();
-            console.log("Form submitted:", form);
+
+            handleSubmit(e);
           }}
         >
           <div>

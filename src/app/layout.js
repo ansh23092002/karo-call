@@ -93,7 +93,7 @@ export default function RootLayout({ children }) {
         <main>
           <LayoutWrapper>   
 
-          <SessionProvider>{children}</SessionProvider>
+          {children}
           </LayoutWrapper>
         </main>
      
