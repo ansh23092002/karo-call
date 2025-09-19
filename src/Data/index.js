@@ -399,3 +399,17 @@ export const aboutWhatdeliver = [
     dec: "From booking to completion, we handle everything smoothly for you. No more stress, delays, or follow-ups — we ensure a seamless experience. Your convenience and comfort are our top priorities",
   },
 ];
+
+  export  const columns = [
+    { key: "id", label: "ID" },
+    { key: "type", label: "Type" },
+    { key: "name", label: "Name" },
+    { key: "email", label: "Email" },
+    { key: "location", label: "Location" },
+  ];
+
+  export const data = [
+    { id: 1, type: "General Enquiry", name: "John Doe", email: "john@example.com", location: "New York" },
+    { id: 2, type: "Job Request", name: "Jane Smith", email: "jane@example.com", location: "Los Angeles" },
+    { id: 3, type: "Service Booking", name: "Mike Ross", email: "mike@example.com", location: "Chicago" },
+  ];

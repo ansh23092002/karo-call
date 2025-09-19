@@ -1,17 +1,11 @@
-"use client"
+import React from 'react'
 
-import { signIn, signOut, useSession } from "next-auth/react"
-
-export default function LoginButton() {
-  const { data: session } = useSession()
-
-  if (session) {
-    return (
-      <div>
-        <p>Welcome, {session.user?.name}</p>
-        <button onClick={() => signOut()}>Logout</button>
-      </div>
-    )
-  }
-  return <button onClick={() => signIn("github")}>Login with GitHub</button>
+const Login = () => {
+  return (
+    <div>
+      
+    </div>
+  )
 }
+
+export default Login

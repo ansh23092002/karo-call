@@ -1,6 +1,6 @@
 import './globals.css'
 import Head from "next/head";
-import { SessionProvider } from "next-auth/react"
+
 import LayoutWrapper from '../components/LayoutWrapper'
 
 

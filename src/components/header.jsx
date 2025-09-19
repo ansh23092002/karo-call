@@ -20,7 +20,6 @@ const Header = () => {
 
     // set title if exists, 
     setTitle(titles[pathname] );
-    console.log("Current Pathname:", pathname);
   }, [pathname]);
 
   return (
