@@ -1,19 +1,26 @@
 
+import axios from "axios";
+
 const BASE_URL = "https://karocallservices.com/api";
+
 const MakeRequest = async (endpoint,method,data={}) => {
     const url = `${BASE_URL}${endpoint}`;
     if (method === 'GET') {
-        const response = await fetch(url);
-        return response.json();
+        try{
+            const response = await axios.get(url);
+            return response.data;
+        }catch(error){
+            console.error("Error fetching data:", error);
+            throw error;
+        }
     } else {
-        const response = await fetch(url, {
-            method,
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
-        return response.json();
+        try{
+            const response = await axios.post(url, data);
+            return response.data;
+        }catch(error){
+            console.error("Error posting data:", error);
+            throw error;
+        }
     }
 };
 

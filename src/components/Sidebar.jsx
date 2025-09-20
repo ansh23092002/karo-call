@@ -5,7 +5,7 @@ import Link from "next/link";
 import { PiFlagBannerFold } from "react-icons/pi";
 import { GrNotes } from "react-icons/gr";
 import { BsReverseLayoutTextSidebarReverse } from "react-icons/bs";
-import { FaHome } from "react-icons/fa";
+import { FaBlog, FaHome } from "react-icons/fa";
 import { GoCodeReview } from "react-icons/go";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
@@ -16,6 +16,7 @@ const Sidebar = () => {
 
   const menuItems = [
     { href: "/admin/dashboard", label: "Home", icon: <FaHome size={20} /> },
+    { href: "/admin/dashboard/blog", label: "Blog", icon: <FaBlog size={20} /> },
     { href: "/admin/dashboard/testimonial", label: "Testimonial", icon: <GoCodeReview size={20} /> },
     { href: "/admin/dashboard/banner", label: "Banner", icon: <PiFlagBannerFold size={20} /> },
     { 

@@ -24,7 +24,7 @@ const Table = ({ columns, data }) => {
         <tbody className="divide-y divide-gray-200 text-sm">
           {data && data.length > 0 ? (
             data.map((row, idx) => (
-              <tr
+              <tr//localhost:3000/admin/dashboard/testimonial
                 key={idx}
                 className="hover:bg-gray-50 transition"
               >
