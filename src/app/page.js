@@ -9,6 +9,7 @@ import { review, services} from "@/Data";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
+
 export default function Home() {
   return (
     <>
